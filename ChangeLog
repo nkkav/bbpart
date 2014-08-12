@@ -1,0 +1,43 @@
+2014-02-24  Nikolaos Kavvadias  <nikos@nkavvadias.com>
+
+  * Changed documentation format to RestructuredText. 
+  * Added ChangeLog in separate file.
+  
+  
+2006-12-01  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * Explicit data type information for dependency operands.
+  * Emit labels in instruction form: opcode=label; target0=<label_sym>.
+  * Emit ubr/cbr targets in the form: target<i>=<target_sym>.
+  
+  
+2006-11-29  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * New option "-global_symbol_table" for reporting global symbols in the 
+    resulting ISeq file.
+  * New option "-mark_false_deps" enables the marking of "false" operand 
+    dependencies. This option should not be used for CFG/SSA SUIFvm.
+  
+
+2006-09-16  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * New option "-dt" enables the production of operand data type information.
+  
+  
+2006-09-15  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * ARM target support is temporarily removed.
+  * Data dependency extraction should work for limited registers as well, 
+    however only for the initial scheduling of the operations. 
+    
+
+2004-10-05  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * Minor additions to README.
+  
+  
+2004-10-05  Nikolaos Kavvadias  <nkavv@physics.auth.gr>
+  
+  * Initial release.
+
+ChangeLog ends here
