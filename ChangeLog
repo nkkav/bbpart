@@ -1,3 +1,11 @@
+=== ChangeLog starts here
+
+2014-08-12  Nikolaos Kavvadias  <nikos@nkavvadias.com>
+
+  * Added VCG file generation for each procedure (was removed 
+    following version **v1.0.1**). 
+  * Added LICENSE (modified BSD licensing scheme).
+
 2014-02-24  Nikolaos Kavvadias  <nikos@nkavvadias.com>
 
   * Changed documentation format to RestructuredText. 
@@ -40,4 +48,4 @@
   
   * Initial release.
 
-ChangeLog ends here
+=== ChangeLog ends here
