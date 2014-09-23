@@ -12,11 +12,16 @@
 +-------------------+----------------------------------------------------------+
 | **Website**       | http://www.nkavvadias.com                                |
 +-------------------+----------------------------------------------------------+
-| **Release Date**  | 12 August 2014                                           |
+| **Release Date**  | 23 September 2014                                        |
 +-------------------+----------------------------------------------------------+
-| **Version**       | 1.1.1                                                    |
+| **Version**       | 1.1.2                                                    |
 +-------------------+----------------------------------------------------------+
 | **Rev. history**  |                                                          |
++-------------------+----------------------------------------------------------+
+|        **v1.1.2** | 2014-09-23                                               |
+|                   |                                                          |
+|                   | Updated header comments in all source files. Added File  |
+|                   | Listing section in README; added AUTHORS.                |
 +-------------------+----------------------------------------------------------+
 |        **v1.1.1** | 2014-08-12                                               |
 |                   |                                                          |
@@ -95,7 +100,48 @@ problems with portable C application codes.
 The ``bbpart`` pass has been tested with MachSUIF 2.02.07.15.
 
 
-2. Installation
+2. File listing
+===============
+
+The ``bbpart`` distribution includes the following files:
+   
++-----------------------+------------------------------------------------------+
+| /bbpart               | Top-level directory                                  |
++-----------------------+------------------------------------------------------+
+| AUTHORS               | List of ``bbpart`` authors.                          |
++-----------------------+------------------------------------------------------+
+| LICENSE               | The modified BSD license governs ``bbpart``.         |
++-----------------------+------------------------------------------------------+
+| README.rst            | This file.                                           |
++-----------------------+------------------------------------------------------+
+| README.html           | HTML version of README.                              |
++-----------------------+------------------------------------------------------+
+| README.pdf            | PDF version of README.                               |
++-----------------------+------------------------------------------------------+
+| VERSION               | Current version of the project sources.              |
++-----------------------+------------------------------------------------------+
+| bbpart.cpp            | Implementation of the ``bbpart`` analysis pass.      |
++-----------------------+------------------------------------------------------+
+| bbpart.h              | C++ header file containing declarations and          |
+|                       | prototypes for the above.                            |
++-----------------------+------------------------------------------------------+
+| rst2docs.sh           | Bash script for generating the HTML and PDF versions |
+|                       | of the documentation (README).                       |
++-----------------------+------------------------------------------------------+
+| suif_main.cpp         | Entry point for building the standalone program      |
+|                       | ``do_bbpart`` that implements the pass.              |
++-----------------------+------------------------------------------------------+
+| suif_pass.cpp         | Define the SUIF pass built as the dynamically        |
+|                       | loadable library ``libbbpart.so``.                   |
++-----------------------+------------------------------------------------------+
+| suif_main.h           | C++ header file for the above.                       |
++-----------------------+------------------------------------------------------+
+| utils.h               | C header file with implementations of auxiliary      |
+|                       | functions.                                           |
++-----------------------+------------------------------------------------------+
+
+
+3. Installation
 ===============
 
 Unpack the ``bbpart`` archive wherever you like, e.g. in ``$MACHSUIFHOME/cfg/bbpart``.
@@ -107,7 +153,7 @@ shared library (``libbbpart.so``) at ``$NCIHOME/solib``, where ``NCIHOME`` is
 the SUIF 2 top-level directory.
 
 
-3. Usage details
+4. Usage details
 ================
 
 The pass accepts an input file in CFG form to operate. You don't have to define
@@ -167,7 +213,7 @@ where options can be one or more of the following:
   generation of global symbol table entries.
 
 
-4. Notes
+5. Notes
 ========
 
 If you use ``bbpart`` in any publication, please give a reference to the
@@ -180,4 +226,3 @@ and Simulation, pp. 633-642, September 15-17, 2004, Santorini, Greece.
 
 This paper discusses a prototype application analysis flow with MachSUIF where 
 ``bbpart`` is used as a CDFG extractor.
-

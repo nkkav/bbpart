@@ -9,7 +9,7 @@
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Id: $Id$
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -361,13 +361,19 @@ ul.auto-toc {
 <td><a class="reference external" href="http://www.nkavvadias.com">http://www.nkavvadias.com</a></td>
 </tr>
 <tr><td><strong>Release Date</strong></td>
-<td>12 August 2014</td>
+<td>23 September 2014</td>
 </tr>
 <tr><td><strong>Version</strong></td>
-<td>1.1.1</td>
+<td>1.1.2</td>
 </tr>
 <tr><td><strong>Rev. history</strong></td>
 <td>&nbsp;</td>
+</tr>
+<tr><td><strong>v1.1.2</strong></td>
+<td><p class="first">2014-09-23</p>
+<p class="last">Updated header comments in all source files. Added File
+Listing section in README; added AUTHORS.</p>
+</td>
 </tr>
 <tr><td><strong>v1.1.1</strong></td>
 <td><p class="first">2014-08-12</p>
@@ -447,8 +453,67 @@ corresponding SUIF2 representation), <tt class="docutils literal">bbpart</tt> sh
 problems with portable C application codes.</p>
 <p>The <tt class="docutils literal">bbpart</tt> pass has been tested with MachSUIF 2.02.07.15.</p>
 </div>
+<div class="section" id="file-listing">
+<h1>2. File listing</h1>
+<p>The <tt class="docutils literal">bbpart</tt> distribution includes the following files:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>/bbpart</td>
+<td>Top-level directory</td>
+</tr>
+<tr><td>AUTHORS</td>
+<td>List of <tt class="docutils literal">bbpart</tt> authors.</td>
+</tr>
+<tr><td>LICENSE</td>
+<td>The modified BSD license governs <tt class="docutils literal">bbpart</tt>.</td>
+</tr>
+<tr><td>README.rst</td>
+<td>This file.</td>
+</tr>
+<tr><td>README.html</td>
+<td>HTML version of README.</td>
+</tr>
+<tr><td>README.pdf</td>
+<td>PDF version of README.</td>
+</tr>
+<tr><td>VERSION</td>
+<td>Current version of the project sources.</td>
+</tr>
+<tr><td>bbpart.cpp</td>
+<td>Implementation of the <tt class="docutils literal">bbpart</tt> analysis pass.</td>
+</tr>
+<tr><td>bbpart.h</td>
+<td>C++ header file containing declarations and
+prototypes for the above.</td>
+</tr>
+<tr><td>rst2docs.sh</td>
+<td>Bash script for generating the HTML and PDF versions
+of the documentation (README).</td>
+</tr>
+<tr><td>suif_main.cpp</td>
+<td>Entry point for building the standalone program
+<tt class="docutils literal">do_bbpart</tt> that implements the pass.</td>
+</tr>
+<tr><td>suif_pass.cpp</td>
+<td>Define the SUIF pass built as the dynamically
+loadable library <tt class="docutils literal">libbbpart.so</tt>.</td>
+</tr>
+<tr><td>suif_main.h</td>
+<td>C++ header file for the above.</td>
+</tr>
+<tr><td>utils.h</td>
+<td>C header file with implementations of auxiliary
+functions.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="installation">
-<h1>2. Installation</h1>
+<h1>3. Installation</h1>
 <p>Unpack the <tt class="docutils literal">bbpart</tt> archive wherever you like, e.g. in <tt class="docutils literal">$MACHSUIFHOME/cfg/bbpart</tt>.
 You don't need to modify anything in the Makefile, if you have a working
 MachSUIF 2 installation.</p>
@@ -457,7 +522,7 @@ shared library (<tt class="docutils literal">libbbpart.so</tt>) at <tt class="do
 the SUIF 2 top-level directory.</p>
 </div>
 <div class="section" id="usage-details">
-<h1>3. Usage details</h1>
+<h1>4. Usage details</h1>
 <p>The pass accepts an input file in CFG form to operate. You don't have to define
 any output files since their naming convention has been hardwired.</p>
 <p>As said above, the bbpart pass is applied on the CFG representation of the
@@ -509,7 +574,7 @@ should not be used for CFG/SSA SUIFvm.</dd>
 </dl>
 </div>
 <div class="section" id="notes">
-<h1>4. Notes</h1>
+<h1>5. Notes</h1>
 <p>If you use <tt class="docutils literal">bbpart</tt> in any publication, please give a reference to the
 following paper:</p>
 <p>Nikolaos Kavvadias and Spiridon Nikolaidis, &quot;Application Analysis with
